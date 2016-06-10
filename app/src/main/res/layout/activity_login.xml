@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#d15b47"
+    android:layout_gravity="center"
+    >
+	
+    <TextView android:text="Sou visitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="215dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        />
+
+    <TextView android:text="Administrador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="2dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="admistrador"
+        />
+    
+    <RelativeLayout 
+    android:layout_width="300dp"
+    android:layout_marginTop="60dp"
+    android:layout_height="400dp"
+    android:layout_marginLeft="15dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fundo">
+    
+      <ImageView
+        android:layout_width="350px"
+        android:layout_height="200px"
+        android:src = "@drawable/icone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        />   
+        
+    <EditText
+        android:id="@+id/etloginPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:background="#e7e7e7"
+        android:drawableRight="@drawable/user"
+        android:hint="E-mail"
+        android:maxLength="20"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/etsenhaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="190dp"
+        android:background="#e7e7e7"
+        android:drawableRight="@drawable/cadeado"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:maxLength="10"
+        android:textColorHint="#000" />
+
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/enviar"
+        android:onClick="startLogin"
+        android:text="Login"
+        android:textColor="#fff" />   
+        
+    </RelativeLayout>
+
+     <ImageView
+        android:layout_width="1200px"
+        android:layout_height="100px"
+        android:src = "@drawable/info"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="500dp"
+        />
+        
+    </RelativeLayout>
+

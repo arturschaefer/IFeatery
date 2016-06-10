@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alexandre.ifeatery" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+
+        <activity
+            android:name=".CafeManha"
+            android:label="CafeManha" >
+        </activity>
+
+        <activity
+            android:name=".Almoco"
+            android:label="Almoco" >
+        </activity>
+
+        <activity
+        android:name=".CafeTarde"
+        android:label="Cafe da Tarde" >
+    </activity>
+
+        <activity
+            android:name=".Janta"
+            android:label="Ja" >
+        </activity>
+
+        <activity
+            android:name=".admin"
+            android:label="Área Administrador" >
+        </activity>
+
+        <activity
+            android:name=".CadastroAlmoco"
+            android:label="Cadastro Almoco" >
+        </activity>
+
+        <activity
+            android:name=".CadastroCafeManha"
+            android:label="Cadastro café da manhã" >
+        </activity>
+
+        <activity
+            android:name=".CadastroCafeTarde"
+            android:label="Cadastro café da tarde" >
+        </activity>
+
+        <activity
+            android:name=".CadastroJanta"
+            android:label="Cadastro Janta" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
